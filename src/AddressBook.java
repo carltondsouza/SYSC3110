@@ -6,7 +6,6 @@ public class AddressBook {
 	
 	
 	
-	
 	public void addBuddy(BuddyInfo b){
 		buddyList.add(b);
 	}
@@ -15,9 +14,27 @@ public class AddressBook {
 		buddyList.remove(b);
 	}
 	
+	public void removeBuddyIndex(int i){
+		if (i <= buddyList.size()){
+			buddyList.remove(i);
+		}
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Address Book");
+		
+		AddressBook addressBook = new AddressBook();
+		
+		BuddyInfo b = new BuddyInfo();
+		b.setName("Jimmy");
+		b.setAddress("18 Rat Crescent");
+		b.setPhonenumber("613-815-4377");
+		
+		addressBook.addBuddy(b);
+		addressBook.removeBuddy(b);
 	}
 
 }
