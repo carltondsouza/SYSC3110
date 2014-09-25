@@ -28,7 +28,6 @@ public class BuddyInfo {
 
 	public void setPhonenumber(String phonenumber) {
 		this.phonenumber = phonenumber;
-		//hshhshshshs
 	}
 
 
